@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,30 +10,38 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#">Main</a></li>
-                <li  class="dropdown"><a href="#">Marathons</a>
+            <input type="checkbox"></input>
+            <div class="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="menu">
+                <li class="li-menu"><a class="a-menu" href="#">Main</a></li>
+                <li class="li-menu dropdown">
+                    <a class="a-menu" href="pages/marathons.html">Marathons</a>
                     <ul class="dropdown-content">
-                        <li><a href="#">Calendar of marathons</a></li>
-                        <li><a href="#">Next marathon</a></li>
-                        <li><a href="#">Raitings</a></li>
+                        <li class="li-sub-menu"><a class="a-menu" href="#">Calendar of marathons</a></li>
+                        <li class="li-sub-menu"><a class="a-menu" href="#">Next marathon</a></li>
+                        <li class="li-sub-menu"><a class="a-menu" href="#">Raitings</a></li>
                     </ul>
                 </li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Fans</a></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">Admin</a></li>
+                <li class="li-menu"><a  class="a-menu" href="news.html">News</a></li>
+                <li class="li-menu"><a class="a-menu"  href="pages/fans.html">Fans</a></li>
+                <li class="li-menu"><a class="a-menu" href="#">Contacts</a></li>
+                <li class="li-menu"><a class="a-menu" href="#">Admin</a></li>
             </ul>
         </nav>
         <div class="logo">
-            <img src="Running_icon_-_Noun_Project_17825.svg" alt="runningMan">
+            <img src="img/Running_icon_-_Noun_Project_17825.svg" alt="runningMan">
         </div>
     </header>
 
-    <content>
-        <img class="carrousel" src="Running.jpg" alt="running">
-        <h2>"Біжи перший" DROHOBYCH HALF MARATHON</h2>
-        <p>
+    <main>
+        <img class="main-page" src="img/Running.jpg" alt="running">
+        <h2 class="main-page">"Біжи перший" <br/> DROHOBYCH HALF MARATHON</h2>
+        <p class="main-page">
             <strong>Види забігів:</strong> <br/>
             -Півмарафон 21.1 км;<br/>
             -Естафета 3*7 км;<br/>
@@ -48,13 +56,13 @@
             і був би дуже радий бачити Вас у своєму рідному місті. А ми обіцяємо, що це буде любов із першого погляду! Маршрут півмарафону 
             буде проходити історичною центральною частиною міста вздовж мальовничих вілл часів Австро-Угорської імперії.
         </p>
-        <h2>Переможці 2021</h2>
-        <p>
+        <h2 class="main-page">Переможці 2021</h2>
+        <p class="main-page">
             <strong>Півмарафон 21.1 км:</strong> Ігор Гелетій за час 1:07:55 з темпом 3:13 км/хв;<br/>
             <strong>Естафета 3*7 км:</strong> Garmin sport watch за час 1:18:43 з темпом 3:44 км/хв;<br/>
             <strong>Індивідуальний забіг на 7 км:</strong> Sasha Zalevskiy за час 26:06 з темпом 3:44 км/хв.<br/>
         </p>
-    </content>
+    </main>
 
     <footer>
         <p>© 2021 Drohobych Half Marathon</p>
