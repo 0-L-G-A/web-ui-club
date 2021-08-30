@@ -1,0 +1,154 @@
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    padding: 50px 0px;
+    background-color:rgba(255, 255, 255, 0.600);
+}
+
+.task-hide{
+    display: none;
+}
+
+.buttons{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.t{
+    width: 150px;
+    height: 50px;
+    font-size: 1.4em;
+}
+
+.t-pressed{
+    background-color: rgb(143, 207, 143);
+}
+/* TASK1,2 */
+#task1>p{
+    font-size: 2em;
+}
+/* TASK3 */
+
+#live-button{
+    height: 50px;
+    width: 150px;
+    font-size: 1.4em;
+    color:hotpink;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.473);
+}
+
+div.mes{
+    width: 150px;
+}
+
+
+/* TASK4 */
+
+.articles h2{
+    text-align: center;
+    padding: 3px 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: white;
+    line-height: 1.3;
+    width: 100%;
+}
+
+.articles p{
+    text-align: justify;
+    padding: 5px 0px;
+}
+
+.article{
+    padding: 0px 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: start;
+    align-items: center;
+    border-bottom: 2px solid black ;      
+}
+
+.bottom-el{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 5px 0px;
+}
+
+.nick{
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.form-article{
+    padding: 0px 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: flex-end;
+    border-bottom: 2px solid black;
+    min-width: 320px;
+}
+
+.text-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 15px 5px;
+    width: 60%;
+}
+
+.text-area textarea{
+    width: 100%;
+    min-width: 100px;
+    border: 1px solid black;
+}
+
+.button-send{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 5px;
+    width: 40%;
+}
+
+.button-send button{
+    min-height: 40px;
+    min-width: 100px;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 1.4em;
+    border: 1px solid black;
+}
