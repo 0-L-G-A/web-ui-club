@@ -107,6 +107,7 @@ class Worker{
     }
     static sortSalaries(...workers){
         const sortedArr = workers.sort((a,b) => a.#salary - b.#salary)
+        // const sortedArr = workers.sort((a,b) => b.#salary - a.#salary)
         let entries = sortedArr.map((worker) => [(worker.fullName).replace(' ','_'), worker.#salary])
         return Object.fromEntries(entries);
     }
